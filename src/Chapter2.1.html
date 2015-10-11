@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>选择元素和绑定数据</title>
+
+</head>
+<body>
+    <p>Apple</p>
+    <p>Pear</p>
+    <p id="myid">Banana</p>
+    <p class="myclass">Orange</p>
+    <p class="myclass"></p>
+
+    <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+    <script>
+
+        var body = d3.select("body");
+
+        //1.1选择第一个p元素
+        var p1 = body.select("p");
+        p1.style("color","red");
+
+    </script>
+</body>
+</html>
